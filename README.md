@@ -27,7 +27,7 @@ npm install
 ```bash
 npm start
 ```
-5. Open the postman collection in [here](https://elements.getpostman.com/redirect?entityId=18863395-ccd2dfaf-8a81-458c-aaa7-59d709787bc9&entityType=collection), preferably using Postman Desktop Agent
+5. Open the postman collection in [here](https://elements.getpostman.com/redirect?entityId=18863395-ccd2dfaf-8a81-458c-aaa7-59d709787bc9&entityType=collection), preferably using Postman Desktop Agent <BR>
 
 ### Endpoints
 |         **Endpoint**         | **HTTP Method** |                                                                                                     **Description**                                                                                                    |                                                                           **Request Body Example in JSON (if any)**                                                                          |
@@ -38,4 +38,84 @@ npm start
 | `/contact/:phoneNumberParam` |       PUT       | Update the contact information based  on the provided phoneNumberParam. If there are no changes to other information, the request body can be modified to only include the updated item such as only firstName or etc. | {   "firstName": "Jonnathan",   "lastName": "Mike",   "numberPhone": "12356708060",   "address": "Tambak Sawah no. 7" }  or  {   "lastName": "Alen",   "address": "Tugu Pahlawan Surabaya" } |
 | `/contact/:phoneNumberParam` |      DELETE     | DELETE the contact information based on the provided phoneParam.                                                                                                                                                       |                                                                                             None                                                                                             |
 
+<BR>
 
+### Successful Response Example
+
+- `/contact` (GET)
+```JSON
+{
+    "status": 200,
+    "data": [
+        {
+            "firstName": "John",
+            "lastName": "Doe",
+            "numberPhone": "1234567890",
+            "address": "Jalan Merdeka No. 10"
+        },
+        {
+            "firstName": "Lulu",
+            "lastName": "Karen",
+            "numberPhone": "9876543210",
+            "address": "Puri Surya Jaya no. 60"
+        }
+    ]
+}
+```
+
+- `/contact/:param` (GET)
+```JSON
+{
+    "status": 200,
+    "data": [
+        {
+            "firstName": "John",
+            "lastName": "Doe",
+            "numberPhone": "1234567890",
+            "address": "Jalan Merdeka No. 10"
+        },
+        {
+            "firstName": "Lulu",
+            "lastName": "John",
+            "numberPhone": "9876543210",
+            "address": "Puri Surya Jaya no. 60"
+        }
+    ]
+}
+```
+
+- `/contact/` (POST)
+```JSON
+{
+    "status": 201,
+    "message": "New contact added",
+    "data": {
+        "firstName": "Janne",
+        "lastName": "Kan",
+        "numberPhone": "12356791099",
+        "address": "Sukolilo No. 9"
+    }
+}
+```
+
+- `/contact/:phoneNumberParam` (PUT)
+```JSON
+{
+    "status": 200,
+    "message": "Changes have been made",
+    "data": {
+        "firstName": "Daniel",
+        "lastName": "Karen",
+        "numberPhone": "1112223333",
+        "address": "Puri Surya Jaya no. 60"
+    }
+}
+```
+
+- `/contact/:phoneNumberParam` (DELETE)
+```JSON
+{
+    "status": 200,
+    "message": "Contact has been deleted"
+}
+```
