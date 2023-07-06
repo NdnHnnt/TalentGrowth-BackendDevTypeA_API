@@ -25,20 +25,14 @@
   },
   {
     "firstName": "Daniel",
-    "lastName": "Wilson",
+    "lastName": "Karen",
     "numberPhone": "1112223333",
-    "address": "Jalan Ahmad Yani No. 72"
+    "address": "Puri Surya Jaya no. 60"
   },
   {
-    "firstName": "Nadine",
-    "lastName": "Haninta",
-    "numberPhone": "1122339876",
-    "address": "Somewhere idk"
-  },
-  {
-    "firstName": "Nana",
-    "lastName": "Haninta",
-    "numberPhone": "11223398760",
-    "address": "Somewhere idk"
+    "firstName": "Anne",
+    "lastName": "Who",
+    "numberPhone": "12356791011",
+    "address": "Tugu Pahlawan Surabaya"
   }
 ]

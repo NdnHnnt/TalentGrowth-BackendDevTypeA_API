@@ -36,7 +36,8 @@ router.get('/:param', (req, res) => {
       // Search by firstName or lastName
       contacts = data.filter(
         (item) =>
-          item.firstName === param || item.lastName === param
+        item.firstName.toLowerCase() === param.toLowerCase() ||
+        item.lastName.toLowerCase() === param.toLowerCase()
       );
     }
   
