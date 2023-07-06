@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "numberPhone": "1234567890",
+    "address": "Jalan Merdeka No. 10"
+  },
+  {
+    "firstName": "Lulu",
+    "lastName": "Karen",
+    "numberPhone": "9876543210",
+    "address": "Puri Surya Jaya no. 60"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "John",
+    "numberPhone": "5551234567",
+    "address": "Jalan Sudirman No. 25"
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "numberPhone": "3216549870",
+    "address": "Jalan Thamrin No. 45"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Wilson",
+    "numberPhone": "1112223333",
+    "address": "Jalan Ahmad Yani No. 72"
+  },
+  {
+    "firstName": "Nadine",
+    "lastName": "Haninta",
+    "numberPhone": "1122339876",
+    "address": "Somewhere idk"
+  },
+  {
+    "firstName": "Nana",
+    "lastName": "Haninta",
+    "numberPhone": "11223398760",
+    "address": "Somewhere idk"
+  }
+]
